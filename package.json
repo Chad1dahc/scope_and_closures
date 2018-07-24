@@ -4,7 +4,7 @@
   "description": "Scope and Closures",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "$(npm bin)/jest src/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   ],
   "author": "cweeks",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/chadjs/scope_and_closures#readme"
+  "homepage": "https://bitbucket.org/chadjs/scope_and_closures#readme",
+  "dependencies": {
+    "jest": "^23.4.1"
+  }
 }
