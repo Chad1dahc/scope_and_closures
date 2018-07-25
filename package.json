@@ -4,19 +4,25 @@
   "description": "Scope and Closures",
   "main": "src/index.js",
   "scripts": {
-    "test": "$(npm bin)/jest src/"
+    "test": "$(npm bin)/jest src/",
+    "lint": "$(npm bin)/eslint src/"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/chadjs/scope_and_closures.git"
+    "url": "git+ssh://git@github.com:Chad1dahc/scope_and_closures.git"
   },
   "keywords": [
     "dix"
   ],
   "author": "cweeks",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/chadjs/scope_and_closures#readme",
+  "homepage": "https://github.com/Chad1dahc/scope_and_closures",
   "dependencies": {
     "jest": "^23.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-jest": "^21.18.0"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "extends": ["eslint:recommended", "google"],
+  "plugins": ["jest"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+    "jest/globals": true,
+    "node": true
+  },
+  "rules": {
+    "require-jsdoc": 0,
+    "no-console": 0,
+    "semi": ["error", "never"],
+    "indent": ["error", 2]
+  }
+}
