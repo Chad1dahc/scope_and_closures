@@ -1,11 +1,9 @@
-var a = 2;
+let a = 2;
 
-(function IIFE(  ){
+(function IIFE( ) {
+  let a = 3
+  console.log( a ) // 3
+  console.log( this.a ) // 2
+})( )
 
-    var a = 3;
-    console.log( a ); // 3
-    console.log( this.a ); // 2
-
-})( );
-
-console.log( a ); // 2
+console.log( a ) // 2

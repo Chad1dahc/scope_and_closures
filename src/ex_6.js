@@ -1,7 +1,9 @@
-var foo = true;
-
+let foo = true
+const something = (inputVariable) => {
+  return inputVariable
+}
 if (foo) {
-    var bar = foo * 2;
-    bar = something( bar );
-    console.log( bar );
+  let bar = foo * 2
+  bar = something( bar )
+  console.log( bar )
 }

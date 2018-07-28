@@ -1,13 +1,14 @@
 function foo() {
-    function bar(a) {
-       i = 3; // changing the `i` in the enclosing scope's for-loop
-        console.log( a + i );
+  function bar(a) {
+    let i = 3 // changing the `i` in the enclosing scope's for-loop
+    console.log( a + i )
+  }
+  let test = true
+  if (test) {
+    for (let i=0; i<10; i++) {
+      bar( i * 2 ) // oops, infinite loop ahead!
     }
-    var test = true;
-    if (test){
-    for (var i=0; i<10; i++) {
-        bar( i * 2 ); // oops, infinite loop ahead!
-    }}
+  }
 }
 
-foo();
+foo()

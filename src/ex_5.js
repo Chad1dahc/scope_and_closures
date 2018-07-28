@@ -1,12 +1,12 @@
-undefined = true; // setting a land-mine for other code! avoid!
+// undefined = true; // setting a land-mine for other code! avoid!
 
-(function IIFE( undefined ){
+// (function IIFE( undefined ) {
+//   let a
+//   if (a === undefined) {
+//     console.log( 'Undefined is safe here!' )
+//   }
+// })()
 
-    var a;
-    if (a === undefined) {
-        console.log( "Undefined is safe here!" );
-    }
-
-})();
-var z;
-console.log(z);
+((one, two)=>{console.log(two)})('lol', 2)
+// let z
+// console.log(z)
